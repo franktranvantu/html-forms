@@ -13,19 +13,27 @@
     <form action="index.html" method="post">
         <h1>Sign Up</h1>
 
-        <label for="name">Name</label>
-        <input type="text" id="name" name="user_name">
+        <fieldset>
+            <legend><span class="number">1</span> Your basic info</legend>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="user_email">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="user_name">
 
-        <label for="password">Password</label>
-        <input type="password" id="password" name="user_password">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="user_email">
 
-        <label for="bio">Biography</label>
-        <textarea id="bio" name="user_bio">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="user_password">
+        </fieldset>
 
-        </textarea>
+        <fieldset>
+            <legend><span class="number">2</span> Your profile</legend>
+
+            <label for="bio">Biography</label>
+            <textarea id="bio" name="user_bio">
+
+            </textarea>
+        </fieldset>
 
         <button type="submit">Sign Up</button>
     </form>
