@@ -5,13 +5,23 @@
         <title>HTML Forms</title>
     </head>
     <body>
-        <!--Below the <h1> element, create a select element with the ID of "color"
-        and the name "shirt_color". Don't add any options yet.-->
+        <!--After the select menu, create a radio button with the ID "small",
+        the value "small", and the name "shirt_size".
+        Don't add a label or line breaks yet.-->
         <form action="index.html" method="post">
             <h1>Shirt Order Form</h1>
-            <select name="shirt_color" id="color">
 
+            <label for="color">Shirt Color:</label>
+            <select name="shirt_color" id="color">
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="purple">Purple</option>
+                <option value="green">Green</option>
+                <option value="orange">Orange</option>
             </select>
+
+            <input type="radio" id="small" value="small" name="shirt_size">
+            <button type="submit">Place Order</button>
         </form>
     </body>
 </html>

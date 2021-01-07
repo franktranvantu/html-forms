@@ -5,11 +5,12 @@
         <title>HTML Forms</title>
     </head>
     <body>
-        <!--Add the following options to the select menu: Red, Yellow, Purple, Blue, Green, and Orange.
-        Each option should have a value attribute. Set each value attribute to the same color name,
-        but in all lowercase. Example: value="blue"-->
+        <!--In the same radio button group, add two more radio buttons for medium and
+        large shirt sizes. Don't add a label or line breaks yet.-->
         <form action="index.html" method="post">
             <h1>Shirt Order Form</h1>
+
+            <label for="color">Shirt Color:</label>
             <select name="shirt_color" id="color">
                 <option value="red">Red</option>
                 <option value="yellow">Yellow</option>
@@ -17,6 +18,11 @@
                 <option value="green">Green</option>
                 <option value="orange">Orange</option>
             </select>
+
+            <input type="radio" id="small" value="small" name="shirt_size">
+            <input type="radio" id="medium" value="medium" name="shirt_size">
+            <input type="radio" id="large" value="large" name="shirt_size">
+            <button type="submit">Place Order</button>
         </form>
     </body>
 </html>

@@ -5,9 +5,11 @@
         <title>HTML Forms</title>
     </head>
     <body>
-        <!--Add a label element to the select menu with the text "Shirt Color:"-->
+        <!--Add a label above the radio button group that says "Shirt Size:".
+        Don't associate it with any specific element.-->
         <form action="index.html" method="post">
             <h1>Shirt Order Form</h1>
+
             <label for="color">Shirt Color:</label>
             <select name="shirt_color" id="color">
                 <option value="red">Red</option>
@@ -16,6 +18,12 @@
                 <option value="green">Green</option>
                 <option value="orange">Orange</option>
             </select>
+
+            <label>Shirt Size:</label>
+            <input type="radio" id="small" value="small" name="shirt_size">
+            <input type="radio" id="medium" value="medium" name="shirt_size">
+            <input type="radio" id="large" value="large" name="shirt_size">
+            <button type="submit">Place Order</button>
         </form>
     </body>
 </html>
